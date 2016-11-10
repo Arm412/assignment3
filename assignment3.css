@@ -1,1 +1,23 @@
-/*styles for assignment 3*/
+p{
+  font-size: 1rem;
+  color: blue;
+}
+
+.list{
+  color: yellow;
+  background-color: blue;
+}
+
+p:hover{
+  margin-left: 5px;
+  transition: .5s;
+}
+
+.list:hover{
+  background-color: black;
+  transition: .5s;
+}
+
+body{
+  background-color: lightgray;
+}

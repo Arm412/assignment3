@@ -1,9 +1,10 @@
 <?php
-include 'ParentClass.php';
-include 'ChildClass.php';
-$grocery_list = new ParentClass("Eggs", "Milk", "Bread");
-$updated_list = new ChildClass("Lucky Charms", "Chips", "Cheese");
-	
+include_once("Vehicle.php");
+include_once("Motorcycle.php");
+$vehicle = new Vehicle("Brad", "2015");
+$motorcycle = new Motorcycle("Barry", "2010");
+$motorcycle2 = new Motorcycle("Matt", "2011");
+
 
 ?>
 
@@ -16,9 +17,11 @@ $updated_list = new ChildClass("Lucky Charms", "Chips", "Cheese");
 </head>
 <body>
 	<div class="list">
+		<h1>Motorcycles</h1>
 		<ul>
-			<li> <?= $grocery_list ?> </li>
-			<li> <?= $updated_list ?> </li>
+			<li> <?= $motorcycle ?> </li>
+			<li> <?= $vehicle ?> </li>
+			<li> <?= $motorcycle2 ?> </li>
 		</ul>
 	</div>
 </body>
